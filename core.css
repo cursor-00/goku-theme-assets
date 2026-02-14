@@ -1,0 +1,153 @@
+/**
+ * @name Goku Gold Kirito
+ * @author You
+ * @description Kirito base converted to Goku Super Saiyan Gold
+ * @version 1.1
+ */
+
+/* =========================================
+   ROOT VARIABLES (GOLD VERSION)
+========================================= */
+
+:root{
+    --background: url('https://cursor-00.github.io/goku-theme-assets/Dragon-Ball-Z-Wallpaper-4K-Goku-Super-Saiyan.jpg');
+
+    --activetext-colour: #ffffff;
+
+    /* GOLD PRIMARY */
+    --primary1-colour: #ffb300;
+    --primary2-colour: rgba(255,179,0,0.6);
+    --primary3-colour: rgba(120,85,0,0.7);
+    --primary4-colour: rgba(120,85,0,0.4);
+
+    /* DARK GLASS */
+    --secondary1-colour: rgba(30,30,30,0.4);
+    --secondary2-colour: rgba(60,60,60,0.6);
+    --secondary3-colour: rgba(0,0,0,0.75);
+    --secondary4-colour: rgba(0,0,0,0.55);
+}
+
+/* =========================================
+   BACKGROUND (STABLE METHOD)
+========================================= */
+
+/* Apply background to entire app */
+#app-mount {
+    background: var(--background) center center / cover no-repeat fixed !important;
+}
+
+/* Remove Discord default backgrounds */
+html, body,
+#app-mount > div,
+.app-2CXKsg,
+.layer-86YKbF,
+.bg-1QIAus {
+    background: transparent !important;
+}
+
+/* =========================================
+   GLASS PANELS
+========================================= */
+
+.sidebar-1tnWFu,
+.chat-2ZfjoI,
+.container-2cd8Mz,
+.members-3WRCEx,
+.content-1jQy2l,
+.container-1NXEtd,
+.peopleColumn-1wMU14 {
+    background-color: var(--secondary4-colour) !important;
+    backdrop-filter: blur(10px);
+}
+
+/* =========================================
+   REMOVE RED – FORCE GOLD
+========================================= */
+
+.numberBadge-37OJ3S,
+.mentionsBadge-3H1BKJ .numberBadge-37OJ3S,
+.newMessagesBar-1hF-9G,
+.lookFilled-1H2Jvj,
+.button-38aScr,
+.addFriend-3vyy-8 {
+    background-color: var(--primary1-colour) !important;
+    color: var(--activetext-colour) !important;
+}
+
+/* =========================================
+   DIRECT MESSAGES HEADER
+========================================= */
+
+.privateChannelsHeaderContainer-2R0K0O {
+    background: linear-gradient(
+        90deg,
+        var(--primary3-colour),
+        var(--primary1-colour)
+    ) !important;
+    border-radius: 10px;
+}
+
+/* =========================================
+   TOP BAR GOLD LINE
+========================================= */
+
+.title-31SJ6t {
+    border-bottom: 3px solid var(--primary1-colour) !important;
+}
+
+/* =========================================
+   SIDEBAR HOVER
+========================================= */
+
+.channel-1Shao0:hover,
+.interactiveSelected-3tG3M3,
+.selected-3s45Ha {
+    background-color: var(--secondary2-colour) !important;
+}
+
+/* =========================================
+   MENTIONS
+========================================= */
+
+.mentioned-Tre-dv:before {
+    background: var(--primary1-colour) !important;
+}
+
+.mention {
+    background-color: var(--primary3-colour);
+    color: var(--primary1-colour);
+}
+
+/* =========================================
+   USER BAR
+========================================= */
+
+.panels-3wFtMD {
+    background-color: var(--secondary3-colour) !important;
+}
+
+/* =========================================
+   EMBEDS
+========================================= */
+
+.embedFull-1HGV2S {
+    background-color: var(--secondary1-colour);
+    border-left: 4px solid var(--primary1-colour);
+    border-radius: 10px !important;
+}
+
+/* =========================================
+   SCROLLBAR
+========================================= */
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary2-colour);
+}
+
+/* =========================================
+   BUTTON HOVER EFFECT
+========================================= */
+
+button:hover {
+    filter: brightness(1.1);
+}
