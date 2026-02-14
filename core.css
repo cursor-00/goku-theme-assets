@@ -1,55 +1,17 @@
-/**
- * @name Goku Gold Kirito
- * @author cursor-00
- * @description Kirito base converted to Goku Super Saiyan Gold
- * @version 1.1
- */
-
 /* =========================================
-   ROOT VARIABLES (GOLD VERSION)
+   CORE STRUCTURE ONLY (NO :ROOT HERE)
 ========================================= */
 
-:root{
-    --background: url('https://cursor-00.github.io/goku-theme-assets/Dragon-Ball-Z-Wallpaper-4K-Goku-Super-Saiyan.jpg');
-    --activetext-colour: white;
-
-    /* GOLD PRIMARY */
-    --primary1-colour: #ffb300;
-    --primary2-colour: rgba(255,179,0,0.6);
-    --primary3-colour: rgba(120,85,0,0.7);
-    --primary4-colour: rgba(120,85,0,0.4);
-
-    /* DARK GLASS */
-    --secondary1-colour: rgba(30,30,30,0.4);
-    --secondary2-colour: rgba(60,60,60,0.6);
-    --secondary3-colour: rgba(0,0,0,0.75);
-    --secondary4-colour: rgba(0,0,0,0.5);
-}
-
-/* =========================================
-   MODERN BACKGROUND FIX (2025 DISCORD)
-========================================= */
-
+/* BACKGROUND ENGINE */
 html, body, #app-mount {
     background: transparent !important;
 }
 
-#app-mount::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    z-index: -1;
-
-    background: var(--background);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+#app-mount {
+    background: var(--background) center/cover no-repeat fixed;
 }
 
-/* =========================================
-   GLASS OVERLAY LAYERS
-========================================= */
-
+/* DARK GLASS LAYERS */
 .bg__960e4,
 .app__160d8,
 .container__133bf,
@@ -61,10 +23,7 @@ html, body, #app-mount {
     background-color: var(--secondary4-colour) !important;
 }
 
-/* =========================================
-   REMOVE RED + FORCE GOLD
-========================================= */
-
+/* REMOVE RED + FORCE GOLD */
 .numberBadge__2b1f5,
 .mentionsBadge__933a1 .numberBadge__2b1f5,
 .newMessagesBar__0f481,
@@ -75,10 +34,7 @@ html, body, #app-mount {
     color: var(--activetext-colour) !important;
 }
 
-/* =========================================
-   DIRECT MESSAGES HEADER GOLD
-========================================= */
-
+/* DIRECT MESSAGES HEADER */
 .privateChannelsHeaderContainer__99e7c {
     background: linear-gradient(
         90deg,
@@ -88,27 +44,13 @@ html, body, #app-mount {
     border-radius: 10px;
 }
 
-/* =========================================
-   ADD FRIEND BUTTON GOLD
-========================================= */
-
-.item__133bf.addFriend__133bf {
-    border-radius: 8px;
-}
-
-/* =========================================
-   TOP BAR FIX (REMOVE RED LINE)
-========================================= */
-
+/* TOP BAR GOLD LINE */
 .title_c38106 {
     background-color: var(--secondary3-colour) !important;
     border-bottom: 3px solid var(--primary1-colour) !important;
 }
 
-/* =========================================
-   SIDEBAR HOVER
-========================================= */
-
+/* SIDEBAR HOVER */
 .channel__972a0:hover,
 .categoryItem_c72b37:hover,
 .interactiveSelected__972a0,
@@ -116,20 +58,7 @@ html, body, #app-mount {
     background-color: var(--secondary2-colour) !important;
 }
 
-/* =========================================
-   CHAT AREA TRANSPARENCY
-========================================= */
-
-.chat_f75fb0,
-.chatContent_f75fb0,
-.content_f75fb0 {
-    background: transparent !important;
-}
-
-/* =========================================
-   MENTIONS GOLD
-========================================= */
-
+/* MENTIONS */
 .mentioned__5126c:before {
     background: var(--primary1-colour) !important;
 }
@@ -139,45 +68,24 @@ html, body, #app-mount {
     color: var(--primary1-colour);
 }
 
-/* =========================================
-   USER BAR (UNCHANGED STYLE)
-========================================= */
-
+/* USER BAR */
 .panels__5e434 {
     background-color: var(--secondary3-colour) !important;
 }
 
-/* =========================================
-   EMBEDS
-========================================= */
-
+/* EMBEDS */
 .embedFull__623de {
     background-color: var(--secondary1-colour);
     border-left: 4px solid var(--primary1-colour);
     border-radius: 10px !important;
 }
 
-/* =========================================
-   SETTINGS GOLD
-========================================= */
-
-.selected_aa8da2,
-.tab_f8303a.selected_aa8da2 {
-    color: var(--primary1-colour) !important;
-}
-
-/* =========================================
-   GOLD SCROLLBAR
-========================================= */
-
+/* SCROLLBAR */
 ::-webkit-scrollbar-thumb {
     background-color: var(--primary2-colour);
 }
 
-/* =========================================
-   GOLD BUTTON HOVER
-========================================= */
-
+/* BUTTON HOVER */
 button:hover {
     filter: brightness(1.1);
 }
