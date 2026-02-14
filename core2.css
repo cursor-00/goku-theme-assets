@@ -1,0 +1,30 @@
+/* --- GOKU CORE V2 (TRANSPARENT FOR VIDEO) --- */
+@import url('https://cursor-00.github.io/goku-theme-assets/core.css');
+
+:root {
+    /* Set background to transparent to allow the video plugin to show through */
+    --background: transparent;
+    
+    /* Super Saiyan Golden Palette */
+    --primary1-colour: #ffcc00;
+    --primary2-colour: rgba(255, 204, 0, 0.4);
+    
+    /* Darker UI glass effect for readability over moving video */
+    --secondary1-colour: rgba(0, 0, 0, 0.3);
+    --secondary2-colour: rgba(0, 0, 0, 0.5);
+    --secondary3-colour: rgba(0, 0, 0, 0.75);
+}
+
+/* Ensure all main containers are transparent for the .webm background */
+#app-mount, 
+.bg__960e4,
+.container__593e3, 
+.members__9ed1c, 
+.container_c2739c {
+    background: transparent !important;
+}
+
+/* Adds a slight dark tint over the video so white text stays sharp and readable */
+.app__160d8 {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+}
