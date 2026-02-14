@@ -1,0 +1,20 @@
+/* --- GOKU CORE V2 (ANIMATED WEBP) --- */
+@import url('https://cursor-00.github.io/goku-theme-assets/core.css');
+
+:root {
+    /* Using your preferred link format */
+    --background: url('https://github.com/cursor-00/goku-theme-assets/blob/main/guko.webp?raw=true');
+    
+    --primary1-colour: #ffcc00;
+    --primary2-colour: rgba(255, 204, 0, 0.4);
+    
+    --secondary1-colour: rgba(0, 0, 0, 0.35);
+    --secondary2-colour: rgba(0, 0, 0, 0.55);
+    --secondary3-colour: rgba(0, 0, 0, 0.8);
+}
+
+#app-mount {
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
+}
