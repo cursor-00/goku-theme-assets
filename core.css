@@ -1,29 +1,40 @@
-/* =========================================
-   CORE STRUCTURE ONLY (NO :ROOT HERE)
-========================================= */
+/* ===============================
+   BACKGROUND FIX (MODERN DISCORD)
+================================ */
 
-/* BACKGROUND ENGINE */
-html, body, #app-mount {
+/* Force main containers transparent */
+html, body,
+.appMount__51fd7,
+.app__160d8,
+.bg__960e4 {
     background: transparent !important;
 }
 
-#app-mount {
-    background: var(--background) center/cover no-repeat fixed;
+/* Apply background to highest mount */
+.appMount__51fd7 {
+    background: var(--background) center center / cover no-repeat fixed !important;
 }
 
-/* DARK GLASS LAYERS */
-.bg__960e4,
-.app__160d8,
+/* ===============================
+   DARK GLASS LAYERS
+================================ */
+
+.sidebar__5e434,
 .container__133bf,
 .chat_f75fb0,
 .chatContent_f75fb0,
 .content_f75fb0,
 .members_c8ffbb,
-.container_c8ffbb {
+.container_c8ffbb,
+.container__9293f,
+.container__551b0 {
     background-color: var(--secondary4-colour) !important;
 }
 
-/* REMOVE RED + FORCE GOLD */
+/* ===============================
+   REMOVE RED + FORCE GOLD
+================================ */
+
 .numberBadge__2b1f5,
 .mentionsBadge__933a1 .numberBadge__2b1f5,
 .newMessagesBar__0f481,
@@ -34,23 +45,32 @@ html, body, #app-mount {
     color: var(--activetext-colour) !important;
 }
 
-/* DIRECT MESSAGES HEADER */
+/* ===============================
+   DIRECT MESSAGES HEADER
+================================ */
+
 .privateChannelsHeaderContainer__99e7c {
     background: linear-gradient(
         90deg,
         var(--primary3-colour),
         var(--primary1-colour)
-    );
+    ) !important;
     border-radius: 10px;
 }
 
-/* TOP BAR GOLD LINE */
+/* ===============================
+   TOP BAR GOLD LINE
+================================ */
+
 .title_c38106 {
     background-color: var(--secondary3-colour) !important;
     border-bottom: 3px solid var(--primary1-colour) !important;
 }
 
-/* SIDEBAR HOVER */
+/* ===============================
+   SIDEBAR HOVER
+================================ */
+
 .channel__972a0:hover,
 .categoryItem_c72b37:hover,
 .interactiveSelected__972a0,
@@ -58,7 +78,10 @@ html, body, #app-mount {
     background-color: var(--secondary2-colour) !important;
 }
 
-/* MENTIONS */
+/* ===============================
+   MENTIONS
+================================ */
+
 .mentioned__5126c:before {
     background: var(--primary1-colour) !important;
 }
@@ -68,24 +91,28 @@ html, body, #app-mount {
     color: var(--primary1-colour);
 }
 
-/* USER BAR */
+/* ===============================
+   USER BAR
+================================ */
+
 .panels__5e434 {
     background-color: var(--secondary3-colour) !important;
 }
 
-/* EMBEDS */
+/* ===============================
+   EMBEDS
+================================ */
+
 .embedFull__623de {
     background-color: var(--secondary1-colour);
     border-left: 4px solid var(--primary1-colour);
     border-radius: 10px !important;
 }
 
-/* SCROLLBAR */
+/* ===============================
+   SCROLLBAR
+================================ */
+
 ::-webkit-scrollbar-thumb {
     background-color: var(--primary2-colour);
-}
-
-/* BUTTON HOVER */
-button:hover {
-    filter: brightness(1.1);
 }
